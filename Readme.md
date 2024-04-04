@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Veronika](https://up.htmlacademy.ru/htmlcss-individual/1/user/1755261).
-* Наставник: `Александр Зиновьев`.
+* Наставник: `Александр Зиновьев (https://htmlacademy.ru/profile/id198751)`.
 
 ---
 
