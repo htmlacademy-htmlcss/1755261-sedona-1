@@ -102,6 +102,22 @@
               </ul>
                   </fieldset>
 
+                  <fieldset class="catalog-filter-group">
+                    <legend class="catalog-filter-title">Стоимость, Р</legend>
+                    <ul class="catalog-filter-list">
+                      <li class="catalog-filter-item">
+                        <label class="control">
+                          <input class="control-input" type="text" name="start_price" value="0">
+                        </label>
+                      </li>
+                      <li class="catalog-filter-item">
+                        <label class="control">
+                          <input class="control-input" type="text" name="end_price" value="9000">
+                        </label>
+                      </li>
+                    </ul>
+                        </fieldset>
+
           <button class="button button-blue" type="submit">Применить</button>
           <button class="button button-clear" type="reset">Сбросить</button>
 
@@ -146,6 +162,7 @@
               <span class="hotel-card-price">от 4000 ₽</span>
               <a class="hotel-card-button button button-brown" href="#">Подробнее</a>
               <button class="button button-blue" type="submit">В избранное</button>
+              <span class="rating">Рейтинг: 8,2</span>
             </li>
             <li class="hotel-card">
               <a class="hotel-card-link" href="hotel.html">
@@ -156,6 +173,7 @@
               <span class="hotel-card-price">от 5000 ₽</span>
               <a class="hotel-card-button button button-brown" href="#">Подробнее</a>
               <button class="button button-green" type="submit">В избранном</button>
+              <span class="rating">Рейтинг: 9,2</span>
             </li>
             <li class="hotel-card">
               <a class="hotel-card-link" href="hotel.html">
@@ -166,6 +184,7 @@
               <span class="hotel-card-price">от 2500 ₽</span>
               <a class="hotel-card-button button button-brown" href="#">Подробнее</a>
               <button class="button button-blue" type="submit">В избранное</button>
+              <span class="rating">Рейтинг: 6,9</span>
             </li>
             <li class="hotel-card">
               <a class="hotel-card-link" href="hotel.html">
@@ -176,8 +195,10 @@
               <span class="hotel-card-price">от 1500 ₽</span>
               <a class="hotel-card-button button button-brown" href="#">Подробнее</a>
               <button class="button button-blue" type="submit">В избранное</button>
+              <span class="rating">Рейтинг: 5,0</span>
             </li>
           </ul>
+
             <ul class="pagination">
               <li class="pagination-item">
                 <a class="pagination-link pagination-current">1</a>
@@ -202,11 +223,10 @@
           </div>
           </section>
 
-            <section class="newsletter">
+            <section class="newsletter newsletter_catalog">
               <h2 class="newsletter_title">Подпишитесь на рассылку</h2>
               <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
               <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label for="newsletter-email">Email</label>
                 <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
                 <button class="button newsletter-button button-blue" type="submit" value="Подписаться">
                 Подписаться</button>
