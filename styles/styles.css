@@ -14,17 +14,31 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   line-height: 26px;
   color: #000000;
   background-color: #ffffff;
   margin: 0;
+  padding: 0;
   min-height: 100%;
   min-width: 1200px;
+  display: flex;
+  flex-direction: column;
 }
 
-
+.container {
+  background-color: #ffffff;
+  width: 1200px;
+  margin: 0 auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
 
 .button {
   font-family: inherit;
@@ -35,14 +49,19 @@ body {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
 .button-brown {
   background-color: #745d5d;
+  display: inline-block;
+  margin: 14px 0;
 }
 
 .button-blue {
-  background-color:#82B3D3;
+  background-color: #82B3D3;
 }
 
 .button-green {
@@ -73,15 +92,40 @@ body {
 .page-header {
   display: flex;
   align-items: flex-start;
+  padding: 0 70px;
+  height: 64px;
+
 }
 
 .logo {
-  display:block;
+  display: block;
+  margin-right: 30px;
+  height: 64px;
+  margin-bottom: -6px;
+  z-index: 1;
 
   img {
-    display:block;
+    display: block;
   }
 }
+
+.header-navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header-navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 430px;
+}
+
+.navigation-user {
+  max-width: 270px;
+  margin-left: auto;
+}
+
 
 .header-navigation-link {
   font-size: 20px;
@@ -96,20 +140,26 @@ body {
 .main-index {
   background-color: #ffffff;
   text-align: center;
+  flex-grow: 1;
 }
 
 .intro {
   color: #ffffff;
   background-color: #2e7079;
-  background-image: url("../images/white-line.svg"),  url("../images/index-background.jpg");
+  background-image: url("../images/white-line.svg"), url("../images/index-background.jpg");
   background-size: 1200px auto, cover;
   background-repeat: no-repeat;
   background-position: center bottom, center;
   padding: 51px 70px 82px;
+  display: block;
+  margin: 0 auto;
 }
+
 
 .advantages-list {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-title {
@@ -120,36 +170,42 @@ body {
 }
 
 .page-title {
-  h2 {font-weight: 700;
+  padding: 70px 0;
+  justify-content: space-between;
+
+  h2 {
+    font-weight: 700;
     font-size: 30px;
     line-height: 36px;
-    text-transform: uppercase;}
+    text-transform: uppercase;
+  }
 
-  p {font-weight: 400;
+  p {
+    font-weight: 400;
     font-size: 22px;
     line-height: 26px;
-  color: #333333;}
+    color: #333333;
+  }
 }
 
-.advantages-title {
-font-weight: 700;
-font-size: 24px;
-line-height: 28px;
-text-transform: uppercase;
+.advantages-title.white {
+  color: #ffffff;
 }
 
-.advantages-title.white {color: #ffffff}
-
-.advantages-description.white {color: #ffffff}
+.advantages-description.white {
+  color: #ffffff;
+}
 
 .advantages-description {
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .advantages-item {
   background-color: #82B3D3;
+  padding: 0 85px;
+  justify-content: space-between;
 }
 
 .advantages-item-lightblue {
@@ -160,21 +216,34 @@ line-height: 21px;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+.advantages-line {
+  display: flex;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
 .services-item {
-text-align: center;
+  text-align: center;
+  width: 1200px;
+
 }
 
 .services-name {
-font-weight: 700;
-font-size: 24px;
-line-height: 28px;
-text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
 }
 
 .services-description {
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .newsletter {
@@ -196,25 +265,30 @@ line-height: 21px;
   color: #000000;
 
   .field {
-    background-color:#E6E6E6;
+    background-color: #E6E6E6;
   }
 }
 
 .newsletter_title {
-font-weight: 700;
-font-size: 30px;
-line-height: 120%;
-text-transform: uppercase
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  text-transform: uppercase
 }
 
-.newsletter>p {
-font-weight: 400;
-font-size: 22px;
-line-height: 118%;
+.newsletter > p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 118%;
 }
 
 .page-footer {
   background-color: #ffffff;
+}
+
+.page-title {
+  width: 592px;
+  padding: 0 70px;
 }
 
 .contacts-phone {
@@ -227,17 +301,18 @@ line-height: 118%;
   text-transform: uppercase;
 }
 
-  .htmlacademy-link {
+.htmlacademy-link {
   font-size: 14px;
   color: #dbb590;
-  }
+}
 
 /*catalog*/
 
 .inner-header-title {
-font-weight: 700;
-font-size: 60px;
-line-height: 130%;;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 130%;
+  ;
 }
 
 .breadcrumbs {
@@ -249,10 +324,10 @@ line-height: 130%;;
 }
 
 .catalog-filter-title {
-font-weight: 700;
-font-size: 20px;
-line-height: 120%;
-text-transform: capitalize;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  text-transform: capitalize;
 }
 
 .hotel-catalog {
@@ -265,56 +340,61 @@ text-transform: capitalize;
   padding: 51px 70px 82px;
 }
 
+.hotel-list {
+  display: flex;
+}
+
 .hotel-card-link {
   color: inherit;
   text-decoration: none;
 }
+
 .search {
-font-weight: 700;
-font-size: 30px;
-line-height: 120%;
-text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  text-transform: uppercase;
 }
 
-.select-control{
+.select-control {
   font-weight: 400;
   font-size: 18px;
   line-height: 117%;
 }
 
 .hotel-card-title {
-font-weight: 700;
-font-size: 24px;
-line-height: 117%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 117%;
 }
 
 .hotel-type {
-font-weight: 400;
-font-size: 18px;
-line-height: 117%;
-color: #333333
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 117%;
+  color: #333333
 }
 
-.hotel-card-price{
-font-weight: 400;
-font-size: 18px;
-line-height: 117%;
-text-align: right;
-color: #333333
+.hotel-card-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 117%;
+  text-align: right;
+  color: #333333
 }
 
-.rating{
-background-color: #E6E6E6;
-font-weight: 400;
-font-size: 16px;
-line-height: 125%;
-text-transform: uppercase;
-text-align: center;
-color: #333333;
+.rating {
+  background-color: #E6E6E6;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333333;
 }
 
 .pagination {
-background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .pagination-link {
@@ -328,9 +408,12 @@ background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  padding: 0 18px;
+  margin: 0;
 }
 
 .pagination-current {
   color: #000000;
-background-color: #E6E6E6;
+  background-color: #E6E6E6;
 }
