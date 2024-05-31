@@ -264,7 +264,7 @@ body {
 }
 
 .newsletter {
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom, center;
   min-height: 414px;
