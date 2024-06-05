@@ -20,7 +20,8 @@ html {
 
 body {
   font-family: "PT Sans", "Arial", sans-serif;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 21px;
   color: #000000;
   background-color: #ffffff;
   margin: 0;
@@ -109,8 +110,8 @@ body {
 
 .header-navigation {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  gap: 20px;
 }
 
 .header-navigation-list {
@@ -181,9 +182,9 @@ body {
   }
 
   .item-text {
-    padding: 85px 85px;
+    padding: 102px 85px;
     width: 230px;
-    min-height: 200px;
+
   }
 }
 
@@ -195,7 +196,7 @@ body {
 }
 
 .page-title {
-  padding: 70px 0;
+  padding: 96px 70px;
 
   span {
     display: block;
@@ -252,8 +253,8 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-line {
-  display: flex;
+.services {
+  padding-top: 64px;
 }
 
 .services-list {
@@ -267,6 +268,12 @@ body {
 .services-item {
   text-align: center;
   width: 400px;
+  height: 385px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
 .services-name {
@@ -274,6 +281,8 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  max-width: 510px;
+  margin: 0 auto 20px;
 }
 
 .services-description {
@@ -287,8 +296,10 @@ body {
   background-repeat: no-repeat;
   background-position: center bottom, center;
   min-height: 414px;
+  box-sizing: border-box;
   text-align: center;
-  padding: 85px 0;
+  padding: 96px 258px 104px;
+  margin: 0;
 }
 
 .newsletter_index {
@@ -317,6 +328,11 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 118%;
+
+  span {
+    display: block;
+  }
+
 }
 
 .page-footer {
@@ -404,16 +420,16 @@ body {
   background-repeat: no-repeat;
   background-position: center bottom, center;
   padding: 51px 70px 82px;
+  max-width: 1200px;
 }
 
 .hotel-list {
   display: flex;
-  padding: 0 70px;
+  padding: 0 70px 40px;
   flex-wrap: wrap;
   align-content: stretch;
   margin: 0;
-  margin-bottom: 80px;
-
+  gap: 20px;
 }
 
 .hotel-card {
