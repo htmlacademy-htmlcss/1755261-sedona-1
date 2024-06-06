@@ -292,6 +292,10 @@ body {
   margin: 0;
 }
 
+.services-item:nth-child( 2n+1) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
 .services-name {
   font-weight: 700;
   font-size: 24px;
