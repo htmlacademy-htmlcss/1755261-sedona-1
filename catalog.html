@@ -9,7 +9,7 @@
 
   <body>
 
-    <body>
+    <div class="container">
       <header class="page-header">
         <a class="logo" href="#">
           <img src="images/logo_sedona.svg" width="140" height="70" alt="Логотип Седоны">
@@ -61,8 +61,6 @@
                   <a class="breadcrumbs-link">Гостиницы</a>
                 </li>
               </ul>
-
-
               <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
@@ -70,12 +68,12 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control" for="Swimming pool">
-                        <input class="control-input" type="checkbox" name="Swimming pool" checked id="name">Бассейн
+                        <input class="control-input" type="checkbox" name="Swimming pool" checked id="pool">Бассейн
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control" for="Parking">
-                        <input class="control-input" type="checkbox" name="Parking" checked id="name">Парковка
+                        <input class="control-input" type="checkbox" name="Parking" checked id="parking">Парковка
                       </label>
                     </li>
                     <li class="catalog-filter-item">
@@ -109,32 +107,32 @@
                   </ul>
                 </fieldset>
                 <div class="catalog-filter-pb">
-                <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">Стоимость, Р</legend>
-                  <ul class="catalog-filter-list">
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="text" name="start_price" value="0">
-                      </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="text" name="end_price" value="9000">
-                      </label>
-                    </li>
-                  </ul>
+                  <fieldset class="catalog-filter-group">
+                    <legend class="catalog-filter-title">Стоимость, Р</legend>
+                    <ul class="catalog-filter-list">
+                      <li class="catalog-filter-item">
+                        <label class="control">
+                          <input class="control-input" type="text" name="start_price" value="0">
+                        </label>
+                      </li>
+                      <li class="catalog-filter-item">
+                        <label class="control">
+                          <input class="control-input" type="text" name="end_price" value="9000">
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
 
-                </fieldset>
-
-                <button class="button button-blue" type="submit">Применить</button>
-                <button class="button button-clear" type="reset">Сбросить</button>
+                  <button class="button button-blue" type="submit">Применить</button>
+                  <button class="button button-clear" type="reset">Сбросить</button>
                 </div>
               </form>
             </div>
-          </section>
+          </header>
+        </section>
 
-            <section class="sorter-hotel-catalog">
-              <div class="catalog-header">
+        <section class="sorter-hotel-catalog">
+          <div class="catalog-header">
             <p class="search">Найдено гостиниц:
               <span class="search-result">38</span>
             </p>
@@ -159,10 +157,9 @@
                 <a class="button" href="#">
                   <span class="visually-hidden">Мелкие значки</span>
                 </a>
-
               </li>
             </ul>
-              </div>
+          </div>
           </header>
 
           <ul class="hotel-list">
@@ -173,11 +170,11 @@
                 <h3 class="hotel-card-title">Amara resort & Spa</h3>
               </a>
               <div class="hotel-info">
-              <span class="hotel-type">Гостиница</span>
-              <span class="hotel-card-price">от 4000 ₽</span>
-              <a class="hotel-card-button button button-brown" href="#">Подробнее</a>
-              <button class="button button-blue" type="submit">В избранное</button>
-              <span class="rating">Рейтинг: 8,2</span>
+                <span class="hotel-type">Гостиница</span>
+                <span class="hotel-card-price">от 4000 ₽</span>
+                <a class="hotel-card-button button button-brown" href="#">Подробнее</a>
+                <button class="button button-blue" type="submit">В избранное</button>
+                <span class="rating">Рейтинг: 8,2</span>
               </div>
             </li>
             <li class="hotel-card">
@@ -239,56 +236,57 @@
               <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
-          </div>
-        </section>
+    </div>
+    </section>
 
-        <section class="newsletter newsletter_catalog">
-          <h2 class="newsletter_title">Подпишитесь на рассылку</h2>
-          <p>Только полезная информация и никакого спама, <span>честное бойскаутское!</span></p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
-              id="newsletter-email" required>
-            <button class="button newsletter-button button-blue" type="submit" value="Подписаться">
-              Подписаться</button>
-          </form>
-        </section>
-        </section>
+    <section class="newsletter newsletter_catalog">
+      <h2 class="newsletter_title">Подпишитесь на рассылку</h2>
+      <p>Только полезная информация и никакого спама, <span>честное бойскаутское!</span></p>
+      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email"
+          required>
+        <button class="button newsletter-button button-blue" type="submit" value="Подписаться">
+          Подписаться</button>
+      </form>
+    </section>
+    </main>
 
-        <footer class="page-footer">
-          <section class="footer-social">
-            <h2 class="социальные сети"></h2>
-            <ul class="footer-social-list">
-              <li class="footer-social-item">
-                <a class="navigation-link" href="#">
-                  <span class="visually-hidden">ВКонтакте</span>
-                </a>
-              </li>
-              <li class="footer-social-item">
-                <a class="navigation-link" href="#">
-                  <span class="visually-hidden">Телеграм</span>
-                </a>
-              </li>
-              <li class="footer-social-item">
-                <a class="navigation-link" href="#">
-                  <span class="visually-hidden">Ютуб</span>
-                </a>
-              </li>
-            </ul>
-          </section>
 
-          <section>
-            <h2 class="Контакты"></h2>
-            <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </section>
-
-          <section>
-            <h2 class="Партнеры"></h2>
-            <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-              <img src="images/logo-html.svg" alt="htmlacademy">
+    <footer class="page-footer">
+      <section class="footer-social">
+        <h2 class="социальные сети"></h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">ВКонтакте</span>
             </a>
-          </section>
-        </footer>
-      </main>
-    </body>
+          </li>
+          <li class="footer-social-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="Контакты"></h2>
+        <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </section>
+
+      <section>
+        <h2 class="Партнеры"></h2>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <img src="images/logo-html.svg" alt="htmlacademy">
+        </a>
+      </section>
+    </footer>
+    </div>
+  </body>
 
 </html>

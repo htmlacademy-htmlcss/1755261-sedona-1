@@ -88,6 +88,12 @@ body {
 
 .explain-grey {
   color: #333333;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 118%;
+  span {
+    display: block;
+  }
 }
 
 .page-header {
@@ -173,6 +179,7 @@ body {
   img {
     width: 800px;
     height: 385px;
+    display: block;
   }
 
   .advantages-item-img {
@@ -219,6 +226,10 @@ body {
 
 .appointment_title {
   margin-top: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 .appointment {
@@ -228,6 +239,7 @@ body {
 
 .advantages-title.white {
   color: #ffffff;
+  margin: 0;
 }
 
 .advantages-description.white {
@@ -255,6 +267,10 @@ body {
 
 .services {
   padding-top: 64px;
+}
+
+.services-text {
+  padding: 0 85px;
 }
 
 .services-list {
@@ -384,6 +400,7 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
+  padding-top: 8px;
 }
 
 .breadcrumbs-link {
@@ -393,6 +410,7 @@ body {
 .catalog-filter-pb {
   margin: 0;
   padding: 0;
+  width: 549px;
   border: none;
   display: flex;
   margin-left: auto;
@@ -430,6 +448,8 @@ body {
   align-content: stretch;
   margin: 0;
   gap: 20px;
+  list-style-type: none;
+
 }
 
 .hotel-card {
