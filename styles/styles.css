@@ -20,8 +20,8 @@ html {
 
 body {
   font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 22px;
+  line-height: 26px;
   color: #000000;
   background-color: #ffffff;
   margin: 0;
@@ -92,6 +92,7 @@ body {
   font-size: 22px;
   line-height: 118%;
   margin: 0;
+  padding-bottom: 56px;
   span {
     display: block;
   }
@@ -356,6 +357,7 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 118%;
+  margin: 0 0 54px 0;
 
   span {
     display: block;
@@ -441,11 +443,16 @@ body {
   margin-left: auto;
 }
 
+.button-filter {
+padding: 50px 56px;
+}
+
 .catalog-header {
   display: flex;
   align-items: flex-start;
   padding: 56px 70px 46px;
   gap: 70px;
+  margin: 0;
 }
 
 .catalog-filter-title {
@@ -453,8 +460,32 @@ body {
   font-size: 20px;
   line-height: 120%;
   text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 32px;
 }
 
+.catalog-filter-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icons-list-use {
+display: flex;
+margin: 0;
+padding: 0;
+flex-wrap: wrap;
+gap: 8px;
+width: 160px;
+}
+
+.icons-list-use-button {
+  background-color: #ffffff;
+  width: 48px;
+  height: 48px;
+  display: block;
+}
 
 .hotel-catalog {
   background-image: url("../images/filter-background.jpg");
@@ -504,15 +535,16 @@ body {
   text-transform: uppercase;
   margin: 0;
   margin-right: auto;
+  max-width: 530px;
 }
 
 .select-control {
   font-weight: 400;
   font-size: 18px;
   line-height: 117%;
+  margin-right: 70px;
   width: 292px;
   margin: 0;
-  margin-right: 70px;
 }
 
 .hotel-card-title {
@@ -547,8 +579,11 @@ body {
 }
 
 .pagination {
-  background-color: #ffffff;
+  padding: 0 70px;
+  margin: 0;
+  margin-bottom: 60px;
   display: flex;
+  gap: 8px;
 }
 
 .pagination-item {
@@ -564,11 +599,11 @@ body {
   justify-content: center;
   box-sizing: border-box;
   padding: 0 18px;
-  margin-right: 8px;
   list-style-type: none;
 }
 
-.pagination-current {
+
+.pagination-item .pagination-current {
   color: #000000;
   background-color: #E6E6E6;
 }
