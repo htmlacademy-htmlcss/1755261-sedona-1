@@ -122,9 +122,10 @@
                       </li>
                     </ul>
                   </fieldset>
-
+                  <div class="button-filter">
                   <button class="button button-blue" type="submit">Применить</button>
                   <button class="button button-clear" type="reset">Сбросить</button>
+                  </div>
                 </div>
               </form>
             </div>
@@ -132,7 +133,7 @@
         </section>
 
         <section class="sorter-hotel-catalog">
-          <div class="catalog-header">
+          <header class="catalog-header">
             <p class="search">Найдено гостиниц:
               <span class="search-result">38</span>
             </p>
@@ -142,25 +143,25 @@
               <option value="expensive">Сначала дорогие</option>
             </select>
 
-            <ul>
-              <li>
-                <a href="#" class="button button-light">
+              <ul class="icons-list">
+                <li class="icons-list-use">
+                <a href="#" class="icons-list-use-button button-light">
                   <span class="visually-hidden">Список</span>
                 </a>
-              </li>
-              <li>
-                <a class="button" href="#">
+                </li>
+                <li class="icons-list-use">
+                <a class="icons-list-use-button" href="#">
                   <span class="visually-hidden">Крупные значки</span>
                 </a>
-              </li>
-              <li>
-                <a class="button" href="#">
+                </li>
+                <li class="icons-list-use">
+                <a class="icons-list-use-button" href="#">
                   <span class="visually-hidden">Мелкие значки</span>
                 </a>
-              </li>
-            </ul>
-          </div>
+                </li>
+              </ul>
           </header>
+
 
           <ul class="hotel-list">
             <li class="hotel-card">
@@ -215,7 +216,7 @@
             </li>
           </ul>
 
-          <ul class="pagination">
+          <ol class="pagination">
             <li class="pagination-item">
               <a class="pagination-link pagination-current">1</a>
             </li>
@@ -229,13 +230,13 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <span class="visually-hidden">...</span>
+              <span class="pagination-ellipses">...</span>
               </a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
             </li>
-          </ul>
+          </ol>
     </div>
     </section>
 
